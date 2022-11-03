@@ -1,0 +1,171 @@
+@import "../_mixin";
+
+/* modal */ 
+.modal{
+    padding-right: 0 !important;
+    &-content{
+        min-width: 45rem;
+        
+        width: auto;
+        margin: auto;
+        padding: 6rem 5rem;
+        font : {
+            size: 1.8rem;
+            weight:500;
+        }
+        .etc{
+            input{
+                max-width: 49.2rem;
+            }
+        }
+        .form-group{
+            input, select{
+                flex:1;
+                width:100%;
+            }
+            &.flex3{
+                >div{
+                    flex:1;
+                }
+            }
+        }
+        .text-notice{
+            &__inner{
+                margin-bottom: 3rem;
+                padding:3rem;
+                font-size: 1.8rem;
+                line-height: normal;
+            }
+        }
+    }
+    // &-dialog{
+    //     margin: 0 !;
+    // }
+    &-large{
+        max-width: 100rem;
+        width: 100%;
+        max-height: 80vh;
+        overflow-y: scroll;
+    }
+    &-body{
+        padding: 0;
+    }
+    &-title{
+        margin-bottom: 3rem;
+        font : {
+            size: 4.4rem;
+            weight: 600;
+        }
+        line-height: 100%;
+        &.font{
+            &_18{
+                font: {
+                    size: 1.8rem;
+                    weight:500;
+                }
+                
+            }
+        }
+    }
+    &-receipt{
+        .modal{
+            &-content{
+                width: 80.8rem;
+                max-height: none;
+                min-height: 116rem;
+                padding: 9.3rem 8.5rem;
+                background: url(../../image/sub/bg-receipt.jpg) no-repeat center;
+                background-size: cover;
+                overflow-y: hidden;
+            }
+            &-title{
+                margin-bottom: 6.5rem
+            }
+        }
+        .button{
+            &-wrap{
+                padding-top:2rem;;
+                border-top:1px dashed #dddddd;
+                button{
+                    width:15.2rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .button{
+        &-wrap{
+            @include display-flex;
+            @include justify-center;
+            &.mt_50{
+                margin-top: 4.75rem;
+            }
+            button{
+                height: 5rem !important;
+                &.button{
+                    &-blue{
+                        background: #005aab;
+                        color:#ffffff;
+                    }
+                    &-gray{
+                        background: #dfdfdf;
+                        color:#000000;
+                        border:0;
+                    }
+                    &-deepgray{
+                        background: #ababab ;
+                        color: #ffffff;
+                    }
+                }
+                &+button{
+                    margin-left: .5rem;
+                }
+            }
+            &.same{
+                button{
+                    max-width: 12rem;
+                    width:100%;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+.receipt{
+    &-header{
+        padding:3rem;
+        font : {
+            size:1.8rem;
+        }
+        border-top:1px solid #dddddd;
+        border-bottom:1px solid #dddddd;
+        color:#555555;
+        line-height: 3rem;
+    }
+    &-content{
+        min-height: 46rem;
+        padding: 4rem 3rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        ul{
+            li{
+                line-height: 4.5rem;
+            }
+        }
+        .tit{
+            display: inline-block;
+            width: 17.5rem;
+            font-weight: 600;
+        }
+    }
+    &-footer{
+        margin-top: 2rem;
+        padding-bottom: 5rem;
+        text-align: center;
+        img{
+            display: inline-block;
+            width: 35.6rem;
+            height: 4.6rem;
+        }
+    }
+}
