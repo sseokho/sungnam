@@ -483,7 +483,7 @@
 }
 
 .pr_4 {
-  padding-right: 4rem;
+  padding-right: 4rem !important;
 }
 
 .pr_5 {
@@ -499,7 +499,7 @@
 }
 
 .pb_2 {
-  padding-bottom: 2rem;
+  padding-bottom: 2rem !important;
 }
 
 .pb_3 {
@@ -507,7 +507,7 @@
 }
 
 .pb_4 {
-  padding-bottom: 4rem;
+  padding-bottom: 4rem !important;
 }
 
 .pb_5 {
