@@ -3,8 +3,8 @@ var swiper = new Swiper(".mySwiper--content1.mySwiper", {
     spaceBetween: 20,
 
     navigation: {
-        nextEl: ".con1 .swiper-button-next",
-        prevEl: ".con1 .swiper-button-prev",
+        nextEl: ".con1 .swiper-button-next,.con1 .swiper-button-next2",
+        prevEl: ".con1 .swiper-button-prev,.con1 .swiper-button-prev2",
       },
   });
 
@@ -13,9 +13,17 @@ var swiper = new Swiper(".mySwiper--content1.mySwiper", {
     spaceBetween: 20,
 
     navigation: {
-        nextEl: ".con2 .swiper-button-next",
-        prevEl: ".con2 .swiper-button-prev",
+        nextEl: ".con2 .swiper-button-next,.con2 .swiper-button-next2",
+        prevEl: ".con2 .swiper-button-prev,.con2 .swiper-button-prev2",
       },
+  });
+
+  $('.start').on('click',function(){
+    swiper.autoplay.start();
+  });
+
+  $('.pause').on('click',function(){
+    swiper.autoplay.stop();
   });
 
   
