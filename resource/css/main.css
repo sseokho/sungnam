@@ -284,8 +284,8 @@
 .content_box p.girl-icon:before{
   content: '';
   position: absolute;
-  left: 28%;
-  top: -38%;
+  left: 18%;
+  top: 28%;
   background: url(../../resource/image/main/girl-icon.png) no-repeat;
   width: 79px;
   height: 109px;
