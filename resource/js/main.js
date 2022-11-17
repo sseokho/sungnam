@@ -24,13 +24,18 @@ var swiper = new Swiper(".mySwiper--content1.mySwiper", {
       },
   });
 
-  $('.start').on('click',function(){
-    swiper.autoplay.start();
-  });
+    $('.start').on('click',function(){
+      swiper.autoplay.start();
+      $(this).removeClass('off');
+      $('.pause').removeClass('on');
+    });
 
-  $('.pause').on('click',function(){
-    swiper.autoplay.stop();
-  });
+    $('.pause').on('click',function(){
+      swiper.autoplay.stop();
+      $(this).addClass('on');
+      $('.start').addClass('off');
+    });
+
 
   
 

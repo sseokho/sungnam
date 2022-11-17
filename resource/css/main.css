@@ -264,7 +264,39 @@
   position:relative;
 }
 
+/*content-header*/
+.content-header{
+  position:relative;
+}
 
+.content-btns{
+  position:absolute;
+  right:0;
+  width:auto;
+  display:flex;
+}
+.content-btns .start,.content-btns .pause{
+  width:13px;
+  height:15px;
+}
+.content-btns .start,.content-btns .start.off{
+  background: url(../../resource/image/main/btn_rc_start.png) no-repeat;
+}
+
+.content-btns .start.on{
+  background: url(../../resource/image/main/btn_rc_start_on.png) no-repeat;
+}
+
+
+.content-btns .pause,.content-btns .pause.off{
+  background: url(../../resource/image/main/btn_rc_pause.png) no-repeat;
+}
+
+.content-btns .pause.on{
+  background: url(../../resource/image/main/btn_rc_pause_on.png) no-repeat;
+}
+
+/* //content-header */
 .content_box .mySwiper{
   width: 100%;
   margin-top: 3rem;
@@ -310,24 +342,29 @@
   width: 91px;
   height: 116px;
 }       
-.content_box .swiper-button-prev{
+.content_box .swiper-button-prev,.content_box .swiper-button-prev2{
   background: url(../../resource/image/main/prev.png) no-repeat;
 }
 
-.content_box .swiper-button-prev.swiper-button-disabled{
+.content_box .swiper-button-prev.swiper-button-disabled,
+.content_box .swiper-button-prev2.swiper-button-disabled
+{
   background: url(../../resource/image/main/prev-dis.png) no-repeat;
 
 }
 
-.content_box .swiper-button-next{
+.content_box .swiper-button-next,.content_box .swiper-button-next2{
   background: url(../../resource/image/main/next.png) no-repeat;
 }
-.content_box .swiper-button-next.swiper-button-disabled{
+.content_box .swiper-button-next.swiper-button-disabled,
+.content_box .swiper-button-next2.swiper-button-disabled{
   background: url(../../resource/image/main/next-dis.png) no-repeat;
 
 }
 .content_box .swiper-button-next,
-.content_box .swiper-button-prev{top:57.5%; color:#000000; width:17px; height:30px;}
+.content_box .swiper-button-next2,
+.content_box .swiper-button-prev,
+.content_box .swiper-button-prev2{top:57.5%; color:#000000; width:17px; height:30px;}
 
 .content_box .swiper-button-next:after, 
 .content_box .swiper-button-prev:after{
