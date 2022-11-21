@@ -270,25 +270,35 @@
 }
 
 .content-btns{
-  position:absolute;
-  right:0;
-  width:auto;
-  display:flex;
+  position: absolute;
+  right: 0;
+  bottom:0;
+  z-index:4;
+  width: 153px;
+  display: flex;
+  justify-content: space-between;
 }
-.content-btns .start,.content-btns .pause{
+
+.con2 .content-btns{
+  bottom:28px;
+}
+.content-btns .play,
+.content-btns .pause{
   width:13px;
   height:15px;
 }
-.content-btns .start,.content-btns .start.off{
-  background: url(../../resource/image/main/btn_rc_start.png) no-repeat;
-}
 
-.content-btns .start.on{
+.content-btns .play{
   background: url(../../resource/image/main/btn_rc_start_on.png) no-repeat;
 }
 
+.content-btns .play.off{
+  background: url(../../resource/image/main/btn_rc_start.png) no-repeat;
+}
 
-.content-btns .pause,.content-btns .pause.off{
+
+
+.content-btns .pause{
   background: url(../../resource/image/main/btn_rc_pause.png) no-repeat;
 }
 
@@ -364,8 +374,19 @@
 .content_box .swiper-button-next,
 .content_box .swiper-button-next2,
 .content_box .swiper-button-prev,
-.content_box .swiper-button-prev2{top:57.5%; color:#000000; width:17px; height:30px;}
+.content_box .swiper-button-prev2{top:57.5%; color:#000000; }
 
+.content_box .swiper-button-next,
+.content_box .swiper-button-prev{
+width:17px; height:30px;
+
+}
+
+.content_box .swiper-button-next2,
+.content_box .swiper-button-prev2{
+width:15px; height:15px;
+background-size:contain;  
+}
 .content_box .swiper-button-next:after, 
 .content_box .swiper-button-prev:after{
     display:none;
@@ -487,27 +508,18 @@
 .bottom_content{
   
   width: 100%;
-  position: relative;
+  display: flex;
   max-width: 1600px;
   padding: 5.05rem 0 4.7rem 0;
   margin: 0 auto;
+  justify-content: space-between;
 }
-.bottom_center {
-display: flex;
 
-flex-direction: column;
-align-items: center;
-margin: 0 auto;
-width: 100%;
-/* float: left; */
-}
-.bottom_center img{
-  display:block;
-}
+
 
 .bottom_menu{
   display:flex;
-  margin-top:4rem;
+  align-items:center;
 }
 .bottom_menu li,
 .bottom_menu li a{
@@ -523,18 +535,17 @@ color:#585455;
 }
 
 .bottom_right{
-  position:absolute;
-  top:6rem;
-  right:0;
+  
 }
 
 .bottom_right button{
-  padding:1rem 3rem;
+  padding:1rem 1.7rem;
   background-color:#fff;
   border-radius:1rem;
 }
 
-.bottom_right button:nth-of-type(1){
+.bottom_right button:nth-of-type(1),
+.bottom_right button:nth-of-type(2){
   margin-right:5px;
 }
 /***************** //bottom ****************/

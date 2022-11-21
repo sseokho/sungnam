@@ -12,6 +12,8 @@ var swiper = new Swiper(".mySwiper--content1.mySwiper", {
         nextEl: ".con1 .swiper-button-next,.con1 .swiper-button-next2",
         prevEl: ".con1 .swiper-button-prev,.con1 .swiper-button-prev2",
       },
+
+      
   });
 
   var swiper2 = new Swiper(".mySwiper--content2.mySwiper", {
@@ -24,18 +26,31 @@ var swiper = new Swiper(".mySwiper--content1.mySwiper", {
       },
   });
 
-    $('.start').on('click',function(){
-      swiper.autoplay.start();
-      $(this).removeClass('off');
-      $('.pause').removeClass('on');
-    });
+  
 
-    $('.pause').on('click',function(){
-      swiper.autoplay.stop();
-      $(this).addClass('on');
-      $('.start').addClass('off');
-    });
 
+  $('.con1 .control-btn.play').on('click', function() {
+    swiper2.autoplay.start();
+    $(this).removeClass('off');
+    $('.control-btn.pause').removeClass('on');
+  });
+  $('.con1 .control-btn.pause').on('click', function() {
+    swiper2.autoplay.stop();
+    $(this).addClass('on');
+    $('.control-btn.play').addClass('off');
+  });
+
+
+  $('.con2 .control-btn.play').on('click', function() {
+    swiper.autoplay.start();
+    $(this).removeClass('off');
+    $('.control-btn.pause').removeClass('on');
+  });
+  $('.con2 .control-btn.pause').on('click', function() {
+    swiper.autoplay.stop();
+    $(this).addClass('on');
+    $('.control-btn.play').addClass('off');
+  });
 
   
 
