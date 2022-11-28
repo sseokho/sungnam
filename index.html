@@ -7,36 +7,18 @@
     <link rel="stylesheet" href="./resource/css/common.css">
 	<link rel="stylesheet" href="./resource/css/main.css">
 	
-
+    <script type="text/javascript" src="./resource/js/include.js"></script>
     <title>디지털성남시</title>
 </head>
 <body>
     <div class="wrap">
-        <div id="skipNavigation" title="스킵내비게이션">
-            <a href="#nav">메뉴 바로가기</a>
-            <a href="#">본문 바로가기</a>
-        </div>
 
         
         <div class="container">
             <div class="container_inner">
-                <div class="header">
-                    <div class="header_wrap">
-                        <div class="top-left">
-                            <a href="#" alt="로고"><img src="./resource/image/main/logo.png"></a>
-                        </div>
-                        <div class="top-center">
-                            <div class="search-btn">
-                                <input type="text" placeholder="검색어를 입력해 주세요.">
-                                <button type="submit" title="검색"></button>
-                            </div>
-                        </div>
-                        <div class="top-right">
-                            <button type="button" class="t_right-btn1">우리 고장 성남</button>
-                            <button type="button" class="t_right-btn2">연표</button>
-                        </div>
-                    </div>
-                </div>
+                <header class="header js-include" data-include-file="./include/header.html">
+                    
+                </header>
 
                 <div class="inner">
                     <div class="main-txt"><img src="./resource/image/main/main-txt.png"></div>
@@ -130,32 +112,14 @@
                     
                 </div>
 
-                <div class="bottom_content">
-                    <div class="bottom_left">
-                        <ul class="bottom_menu">
-                            <li><a href="#">개인정보처리방침</a></li>
-                            <li>|</li>
-                            <li><a href="#">한국학중앙연구원</a></li>
-                            <li>|</li>
-                            <li><a href="#">이용안내</a></li>
-                            <li>|</li>
-                            <li><a href="#">만든 사람들</a></li>
-                            
-                            <li><a href="#"></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="bottom_right">
-                        <button type="button"><img src="./resource/image/main/sungnam-logo.png"></button>
-                        <button type="button"><img src="./resource/image/main/sungnamedu-logo.png"></button>
-                        <button type="button"><img src="./resource/image/main/culturesungnam-logo.png"></button>
-                    </div>
-                </div>
+                
             </div>
         </div>
 
-        <footer class="footer">
-            <p>COPYRIGHT © 2022. 한국중앙연구원. ALL RIGHTS RESERVED. 대표전화 : 031-709-8111</p>
+
+
+        <footer class="footer js-include" data-include-file="./include/footer.html">
+            
         </footer>
 
     </div>
@@ -166,5 +130,6 @@
 <script type="text/javascript" src="./resource/js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="./resource/js/swiper.min.js"></script>
 	<script type="text/javascript" src="./resource/js/common.js"></script>
+	<script type="text/javascript" src="./resource/js/include.js"></script>
 	<script type="text/javascript" defer src="./resource/js/main.js"></script>
 </html>

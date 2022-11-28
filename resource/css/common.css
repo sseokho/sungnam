@@ -160,6 +160,10 @@
   color: #2024dc !important;
 }
 
+.color-lightblue {
+  color: #0677ec !important;
+}
+
 .color-cherryRed {
   color: #f7592a !important;
 }
@@ -641,7 +645,50 @@ h5 {
   display: none;
 }
 
+.flex_none{
+  flex: none;
+}
+.flex_01{
+  flex:0.1;
+}
 
+.flex_02{
+  flex:0.2;
+}
+.flex_03{
+  flex:0.3;
+}
+.flex_04{
+  flex:0.4;
+}
+.flex_05{
+  flex:0.5;
+}
+.flex_06{
+  flex:0.6;
+}
+.flex_07{
+  flex:0.7;
+}
+.flex_08{
+  flex:0.8;
+}
+.flex_09{
+  flex:0.9;
+}
+.flex_1{
+  flex:1;
+}
+
+.flex_direction--column{
+  flex-direction:column;
+}
+
+
+.align_items--center{
+  display:flex;
+  align-items:center;
+}
 
 
 
