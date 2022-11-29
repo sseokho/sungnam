@@ -1,0 +1,32 @@
+.create_contents .sub_tile-layout{
+  display:flex;
+  flex:0.7;
+  flex-direction:column;
+}
+.create_contents .layout-title{
+  padding: 1.5rem 4rem;
+  background-color: #4183f2;
+  color: #fff;
+  font-size: 3rem;
+  border-radius: 20rem;
+  width: max-content;
+  text-align: center;
+}
+
+.create_contents .layout-table table tr td:nth-child(2n-1){
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.create_contents .layout-description{
+  flex:0.7;
+}
+.create_contents .sub_tile-layout--content{
+  flex-direction:column;
+  border-bottom:none !important;
+}
+
+
+.create_contents .layout-table table{
+  margin-left:3rem;
+}
