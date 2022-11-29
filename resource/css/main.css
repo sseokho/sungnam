@@ -1,12 +1,5 @@
 @import 'sub.css';
 
-.container_inner{
-  max-width:1920px;
-  margin:0 auto;
-  position:relative;
-  background-color:#9bc33d;
-}
-
 
 /**************** header ***************/
 .header{
@@ -44,7 +37,7 @@
   width:67.5rem;
   height:7.7rem;
 
-   overflow:hidden;
+  overflow:hidden;
   border:3px solid rgb(255, 255, 255, 44%);
   background-color:#fff;
   border-radius:5rem;

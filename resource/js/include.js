@@ -1,7 +1,7 @@
 
 
 $(document).ready(function () {
-    includeHTML();    
+    includeHTML();   
 });
 
 function includeHTML() {
@@ -25,6 +25,4 @@ function includeHTML() {
         return;
       }
     });
-  } includeHTML();
-  
-
+} includeHTML();

@@ -26,6 +26,15 @@ var swiper = new Swiper(".mySwiper--content1.mySwiper", {
       },
   });
 
+  var swiper3 = new Swiper(".mySwiper--content3.mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: ".multi-footer .swiper-button-next",
+        prevEl: ".multi-footer .swiper-button-prev",
+      },
+  });
+
   
 
 
@@ -84,6 +93,45 @@ var swiper = new Swiper(".mySwiper--content1.mySwiper", {
 
       
   );
+
+
+
+  $('.layer-popup').addClass("display--none")
+  $('.multi-popup').addClass("display--none")
+  $('.multi-popup2').addClass("display--none")
+
+
+  $('.more-btn').on('click', function() {
+
+    
+    $('.layer-popup').show();
+    $('.multi-popup').removeClass("display--none")
+    
+  });
+
+  $('.close-btn').on('click', function() {
+
+    $('.layer-popup').hide();
+    $('.multi-popup').addClass("display--none")
+  });
+
+
+  $('.t_right-btn2').on('click', function() {
+    alert("ff")
+    $('.layer-popup').show();
+    $('.multi-popup2').removeClass("display--none")
+    
+  });
+
+  $('.close-btn').on('click', function() {
+
+    $('.layer-popup').hide();
+    $('.multi-popup2').addClass("display--none")
+  });
+
+
+  
+
 
 
 

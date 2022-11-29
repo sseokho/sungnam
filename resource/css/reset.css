@@ -26,6 +26,7 @@ time, mark, audio, video, button, input, textarea {
 	font-weight:300;
     font-style:normal;
     vertical-align: baseline;
+    letter-spacing:-2.5px !important;
 }
 input::-webkit-input-placeholder{
     margin: 0;
