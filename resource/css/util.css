@@ -1,0 +1,30 @@
+.util_contents .layout-description-sub-title{
+  font-weight:500;
+  font-size:2.4rem !important;
+  color:#4183f2;
+}
+
+.util_contents .layout-img{
+  display:block;
+  margin:2rem auto 0 auto;
+}
+
+.util_contents .layout-img + .layout-description--txt{
+  margin-top:3rem;
+}
+.util_contents .layout-description .layout-description-sub-title:nth-child(2){
+  margin-top:3rem !important;
+}
+.util_contents .layout-description .layout-description-sub-title:not(:nth-child(2)){
+  margin-top:6rem;
+}
+
+
+.util_contents .layout-description-sub-title + .layout-description--txt{
+  margin-top:3rem;
+}
+
+.util_contents .sub_tile-layout--content{
+  border-bottom:none !important;
+}
+

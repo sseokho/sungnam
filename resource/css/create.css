@@ -12,10 +12,20 @@
   width: max-content;
   text-align: center;
 }
-
+.create_contents .layout-table table{
+  table-layout:fixed;
+}
 .create_contents .layout-table table tr td:nth-child(2n-1){
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.create_contents .layout-table--free table tr td:nth-child(2n-1){
+  font-weight:400;
+}
+
+.create_contents .layout-table--free table tr td:first-child{
+  font-weight:500;
 }
 
 .create_contents .layout-description{
@@ -29,4 +39,11 @@
 
 .create_contents .layout-table table{
   margin-left:3rem;
+}
+
+
+.create_contents .layout-table thead th{
+  font-size:3rem;
+  font-weight:500;
+  color:#4183f2;
 }
