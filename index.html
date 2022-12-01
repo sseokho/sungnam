@@ -6,17 +6,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resource/css/common.css">
 	<link rel="stylesheet" href="./resource/css/main.css">
-	
-    <script type="text/javascript" src="./resource/js/include.js"></script>
+	<link rel="stylesheet" href="./resource/css/sub.css">
+
+
+	<script type="text/javascript" src="./resource/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" defer src="./resource/js/main.js"></script>
+    <script type="text/javascript" src="./resource/js/common.js"></script>
+    <script type="text/javascript" src="./resource/js/swiper.min.js"></script>
+    <script type="text/javascript"  src="./resource/js/include.js"></script>
     <title>디지털성남시</title>
 </head>
 <body>
+    <div class="layer-popup">
+        <div class="popup-layout iframe-popup">
+            <div class="popup-header">
+                <p>「파계사와 영조대왕 이야기」</p>
+                <button type="button" class="close-btn"></button>
+            </div>
+
+            <div class="popup-body">
+                <div class="multi_tile-layout--content flex_1">
+                    <iframe width="100%" height="470" src="https://www.youtube.com/embed/Xs4uR32eJ7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+                    </iframe>
+                   
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <div class="layout-table layout-table-line--5 flex_07">
+                    <table>
+                        <colgroup>
+                            <col style="width:100px;"></col>
+                            <col style="width:auto;"></col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>자료 ID</td>
+                                <td>GC402M01001</td>
+                            </tr>
+                            <tr>
+                                <td>설명문</td>
+                                <td>팔공산에 위치한 파계사에 전해오는 영조의 탄생과 관련한 이야기이다.</td>
+                            </tr>
+                            <tr>
+                                <td>소재지</td>
+                                <td>대구광역시 동구 파계로 741[중대동 7]</td>
+                            </tr>
+                            <tr>
+                                <td>제작일자</td>
+                                <td>2022년 03월 20일</td>
+                            </tr>
+                            <tr>
+                                <td>저작권</td>
+                                <td>한국학중앙연구원</td>
+                            </tr>
+                            
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="popup-layout year-popup">
+            <div class="popup-header">
+                <p>연표</p>
+                <img src="./resource/image/main/year-popup-logo.png">
+            </div>
+
+            <div class="popup-body">
+                <section class="sub_tile-layout">
+                    <div class="year_tile-layout--content flex_1">
+                        <div class="layout-third-title mt_20"><p><span>시대별 선택</span> </p>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="layout-description">
+                        <div class="layout-description-btns">
+                            <button type="button">삼국시대이전</button>
+                            <button type="button">통일신라</button>
+                            <button type="button">고려</button>
+                            <button type="button">조선전기</button>
+                            <button type="button">조선후기</button>
+                            <button type="button">1920</button>
+                            <button type="button" class="is-active">1940</button>
+                            <button type="button">1950</button>
+                            <button type="button">1960</button>
+                            <button type="button">1970</button>
+                            <button type="button">1980</button>
+                            <button type="button">1990</button>
+                            <button type="button">2000</button>
+                            <button type="button">2010</button>
+                            <button type="button">현재</button>
+                        </div>
+                    </div>
+                    
+                    <div class="layout-table pt_3 flex_07">
+                        <table class="head-table">
+                            <colgroup>
+                                <col style="width:170px"></col>
+                                <col ></col>
+                                <col ></col>
+                            </colgroup>
+                            <thead>
+                                
+                                <th>연도</th>
+                                <th>유형</th>
+                                <th>사건명</th>
+                            
+                        </thead>
+                        </table>
+
+
+                        <table class="scroll-table">    
+                            <colgroup>
+                                <col style="width:170px"></col>
+                                <col style="width:340px"></col>
+                                <col style="width:490px"></col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>2015</td>
+                                    <td>행사</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr class="is-active">
+                                    <td>2015.1.29</td>
+                                    <td>기관</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+                                <tr>
+                                    <td>2015.2.24</td>
+                                    <td>시설</td>
+                                    <td>대구 동화사 괘불도, 국가등록문화재 제628호로 지정</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+                        
+                        
+
+                        
+                    </div>
+                   
+
+                </section>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
     <div class="wrap">
 
         
         <div class="container">
             <div class="container_inner">
-                <header class="header js-include" data-include-file="./include/header.html">
+                <header  data-include-file="./include/header.html" class="header js-include">
                     
                 </header>
 
@@ -127,9 +343,5 @@
 
 </body>
 
-<script type="text/javascript" src="./resource/js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="./resource/js/swiper.min.js"></script>
-	<script type="text/javascript" src="./resource/js/common.js"></script>
-	<script type="text/javascript" src="./resource/js/include.js"></script>
-	<script type="text/javascript" defer src="./resource/js/main.js"></script>
+
 </html>
