@@ -2,8 +2,22 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 5;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+.popup-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 40%);
+}
+
+.layer-popup .popup-layout {
+  z-index: 99;
 }
 .multi-popup {
   top: 3% !important;

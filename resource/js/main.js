@@ -77,7 +77,6 @@ $(".mySwiper--content2 .state_link").hover(
 
 $(".layer-popup").addClass("display--none");
 $(".multi-popup").addClass("display--none");
-$(".multi-popup2").addClass("display--none");
 $(".layer-popup").addClass("display--none");
 $(".iframe-popup").addClass("display--none");
 $(".year-popup").addClass("display--none");
@@ -87,7 +86,7 @@ $(".more-btn").on("click", function () {
   $(".year-popup").removeClass("display--none");
 });
 
-$(".layer-popup").on("click", function () {
+$(".close-btn").on("click", function () {
   $(".layer-popup").hide();
   $(".year-popup").addClass("display--none");
 });
@@ -97,7 +96,7 @@ $(".state_link").on("click", function () {
   $(".iframe-popup").removeClass("display--none");
 });
 
-$(".layer-popup").on("click", function () {
+$(".close-btn").on("click", function () {
   $(".layer-popup").hide();
   $(".iframe-popup").addClass("display--none");
 });
@@ -112,13 +111,12 @@ $(".close-btn").on("click", function () {
   $(".multi-popup").addClass("display--none");
 });
 
-$(".header_wrap").on("click", function () {
-  alert("ff");
+$(".t_right-btn2").on("click", function () {
   $(".layer-popup").show();
-  $(".multi-popup2").removeClass("display--none");
+  $(".year-popup").removeClass("display--none");
 });
 
-$(".close-btn").on("click", function () {
+$(".popup-inner").on("click", function () {
   $(".layer-popup").hide();
-  $(".multi-popup2").addClass("display--none");
+  $(".year-popup").addClass("display--none");
 });
