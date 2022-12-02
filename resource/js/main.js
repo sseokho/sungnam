@@ -25,7 +25,7 @@ var swiper2 = new Swiper(".mySwiper--content2.mySwiper", {
 });
 
 var swiper3 = new Swiper(".mySwiper--content3.mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 4,
   spaceBetween: 20,
   navigation: {
     nextEl: ".popup-footer .swiper-button-next",

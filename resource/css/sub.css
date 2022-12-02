@@ -5,6 +5,60 @@
   z-index: 5;
   background-color: rgba(0, 0, 0, 40%);
 }
+.multi-popup {
+  top: 3% !important;
+}
+.popup-content_box {
+  margin: 0 auto !important;
+  width: 100%;
+
+  position: relative;
+}
+.popup-content_box .swiper-wrapper {
+  height: 287px !important;
+}
+.popup-content_box .mySwiper {
+  width: 1000px !important;
+  padding: 0rem 2rem !important;
+  margin: 3rem auto 0 auto !important;
+}
+
+.popup-content_box .slide-content .state_link p {
+  text-align: left;
+  font-size: 1.6rem !important;
+}
+.popup-content_box .swiper-button-prev {
+  left: 20px !important;
+}
+.popup-content_box .swiper-button-next {
+  right: 20px !important;
+}
+
+.popup-footer .swiper-button-prev {
+  background: url(../../resource/image/main/prev.png) no-repeat;
+}
+
+.popup-footer .swiper-button-prev.swiper-button-disabled {
+  background: url(../../resource/image/main/prev-dis.png) no-repeat;
+}
+
+.popup-footer .swiper-button-next {
+  background: url(../../resource/image/main/next.png) no-repeat;
+}
+.popup-footer .swiper-button-next.swiper-button-disabled {
+  background: url(../../resource/image/main/next-dis.png) no-repeat;
+}
+.popup-footer .swiper-button-next,
+.popup-footer .swiper-button-prev {
+  top: 57.5%;
+  color: #000000;
+}
+
+.popup-footer .swiper-button-next,
+.popup-footer .swiper-button-prev {
+  width: 17px;
+  height: 30px;
+}
 
 .popup-layout {
   position: absolute;
@@ -237,7 +291,7 @@
   font-weight: 500;
 }
 .sub_tile-layout .layout-second-title p span {
-  font-size: 2.6rem;
+  font-size: 3.4rem;
   font-weight: 500;
 }
 
@@ -440,7 +494,7 @@
   border: 1px solid #63acf8;
   color: #4183f2;
   font-size: 1.8rem;
-  padding: 1.5rem 3.5rem;
+  padding: 0.7rem 3rem;
 }
 
 .layout-description-btns button + button {
