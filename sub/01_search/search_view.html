@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../resource/css/common.css">
 	<link rel="stylesheet" href="../../resource/css/main.css">
+    <link rel='stylesheet' href='https://unpkg.com/simplebar@latest/dist/simplebar.css'>
 	
   
     <title>디지털성남시</title>
@@ -287,7 +288,7 @@
             <p>COPYRIGHT © 2022. 한국중앙연구원. ALL RIGHTS RESERVED. 대표전화 : 031-709-8111</p>
         </footer>
 
-        <div class="layer-popup">
+        <div class="layer-popup pop-wrap" style="display:none">
             <div class="popup-inner"></div>
             <div class="popup-layout multi-popup">
                 <div class="popup-header">
@@ -368,7 +369,7 @@
             </div>
     
             <div class="popup-layout year-popup">
-                <div class="popup-header">
+                <div class="popup-header ">
                     <p>연표</p>
                     <img src="../../resource/image/main/year-popup-logo.png">
                 </div>
@@ -418,7 +419,7 @@
                             </thead>
                             </table>
     
-    
+                            <div id="simple-bar" class="ui-scroller">
                             <table class="scroll-table">    
                                 <colgroup>
                                     <col style="width:170px"></col>
@@ -506,7 +507,7 @@
                                 </tbody>
                             </table>
     
-                            
+                            </div>
                             
     
                             
@@ -530,4 +531,5 @@
 	<script type="text/javascript" src="../../resource/js/common.js"></script>
 	<script type="text/javascript" src="../../resource/js/include.js"></script>
 	<script type="text/javascript" defer src="../../resource/js/main.js"></script>
+    <script src='https://unpkg.com/simplebar@latest/dist/simplebar.min.js'></script>
 </html>

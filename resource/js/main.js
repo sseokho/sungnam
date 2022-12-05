@@ -1,3 +1,7 @@
+$(function () {
+  callPop();
+});
+
 var swiper = new Swiper(".mySwiper--content1.mySwiper", {
   slidesPerView: 5,
   spaceBetween: 20,
@@ -77,7 +81,6 @@ $(".mySwiper--content2 .state_link").hover(
 
 $(".layer-popup").addClass("display--none");
 $(".multi-popup").addClass("display--none");
-$(".layer-popup").addClass("display--none");
 $(".iframe-popup").addClass("display--none");
 $(".year-popup").addClass("display--none");
 
@@ -120,3 +123,49 @@ $(".popup-inner").on("click", function () {
   $(".layer-popup").hide();
   $(".year-popup").addClass("display--none");
 });
+
+var myElement = document.getElementById("simple-bar");
+new SimpleBar(myElement, { autoHide: true });
+
+$(".more-btn").click(function () {
+  $(".more-btn").addClass("is-active");
+  $("body, html").addClass("overflow-hidden");
+});
+
+$(".popup-inner").on("click", function () {
+  $(".more-btn").removeClass("is-active");
+  $("body, html").removeClass("overflow-hidden");
+});
+
+/*
+function callPop(){
+	$('.popup').on('click', function(){
+		var cp = $(this);
+		var tabDisable;
+		var nowScrollPos = $(window).scrollTop();
+
+		$('body').css('overflow', 'hidden');
+		$("#" + $(this).data('id')).parents('.pop-wrap').show();
+		$("#" + $(this).data('id')).show();
+		$('.pop-cont .close button').focus();
+
+
+		function popClose(){
+			$('body').css('overflow', 'auto');
+			$(window).scrollTop(nowScrollPos);
+			$('.pop-wrap').hide();
+			$('.core, .abstract_cont').hide();
+			self.focus();
+			cp.focus();
+		};
+		$('.pop-wrap').find('.close, .close button').on('click', popClose);
+		$('.pop-wrap').find('.pop-bg').on('click', popClose);
+
+	});
+	$('.close_all').click(function(){
+		$(this).parents('.abstract_cont').hide();
+	});
+
+}
+
+*/

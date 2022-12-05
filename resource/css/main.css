@@ -1,13 +1,73 @@
 @import "sub.css";
+html,
+body {
+  overflow: initial;
+}
 .wrap {
   min-width: 1600px;
 }
-.scroll-table {
+/* .scroll-table {
   border-top: none !important;
   height: 500px;
   overflow-y: auto;
   display: block;
+} */
+
+.ui-scroller > .simplebar-track {
+  background: #d8dde5;
 }
+
+.ui-scroller > .simplebar-track .simplebar-scrollbar::before {
+  top: 10px;
+  bottom: 10px;
+  left: 6px;
+  right: 6px;
+  border-radius: 2px;
+  background: #9cb8dd;
+  margin: 4px 0;
+}
+
+.ui-scroller > .simplebar-track .simplebar-scrollbar.simplebar-visible::before {
+  opacity: 1;
+}
+
+.ui-scroller
+  > .simplebar-track.simplebar-horizontal
+  .simplebar-scrollbar::before {
+  left: 10px;
+  right: 10px;
+  top: 6px;
+  bottom: 6px;
+  height: auto;
+}
+
+.ui-scroller > .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  top: 0;
+  height: 100%;
+}
+
+.ui-scroller
+  > .simplebar-track.simplebar-vertical
+  .simplebar-scrollbar::before {
+  top: 10px;
+  bottom: 10px;
+}
+
+.ui-scroller > .simplebar-track.simplebar-horizontal {
+  height: 17px;
+}
+
+.ui-scroller > .simplebar-track.simplebar-vertical {
+  width: 6px;
+  margin: 4px;
+  border-radius: 3px;
+}
+
+.ui-scroller .simplebar-scrollbar {
+  background: #9cb8dd;
+  border-radius: 3px;
+}
+
 .popup-layout.year-popup {
   top: 2%;
   z-index: 999;

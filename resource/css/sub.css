@@ -345,6 +345,7 @@
   display: flex;
   border-bottom: 1px solid #dddddd !important;
   padding: 3rem 0;
+  position: relative;
 }
 
 .layout-description {
