@@ -551,7 +551,7 @@ body {
   height: 214px;
   display: block;
 }
-.content_box .slide-content button.state_link {
+.content_box .slide-content a.state_link {
   width: 100%;
   height: 100%;
   position: absolute;

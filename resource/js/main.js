@@ -94,7 +94,7 @@ $(".close-btn").on("click", function () {
   $(".year-popup").addClass("display--none");
 });
 
-$(".state_link").on("click", function () {
+$(".iframe_link").on("click", function () {
   $(".layer-popup").show();
   $(".iframe-popup").removeClass("display--none");
 });
